@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Секреты
+.env
+*.key
+
+# Данные и индексы RAG (большие и генерируются заново)
+data/
+*.pdf
+chroma_db/
+faiss_index/
+*.index
+
+# IDE / OS
+.vscode/
+.idea/
+Thumbs.db
