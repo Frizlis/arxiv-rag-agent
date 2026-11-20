@@ -1,0 +1,32 @@
+[project]
+name = "rag-agent"
+version = "0.1.0"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+    "fastapi>=0.162.4",
+    "huggingface-hub>=2.4.0",
+    "langchain>=1.4.10",
+    "langchain-ollama>=1.1.0",
+    "langchain-openai>=1.7.4",
+    "langgraph>=1.2.20",
+    "numpy>=2.4.6",
+    "pgvector>=0.5.1",
+    "psycopg[binary]>=3.3.8",
+    "pydantic-settings>=2.16.2",
+    "sentence-transformers>=6.3.0",
+    "sqlalchemy>=2.1.8",
+    "uvicorn>=0.54.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+    "ruff>=0.17.6",
+]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 79
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]
