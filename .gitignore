@@ -7,9 +7,11 @@ venv/
 # Секреты
 .env
 *.key
+AGENT.local.md
 
 # Данные и индексы RAG (большие и генерируются заново)
 data/
+llm/
 *.pdf
 chroma_db/
 faiss_index/
