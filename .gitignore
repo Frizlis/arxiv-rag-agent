@@ -8,6 +8,7 @@ venv/
 .env
 *.key
 AGENT.local.md
+learning_resources.md
 
 # Данные и индексы RAG (большие и генерируются заново)
 data/
